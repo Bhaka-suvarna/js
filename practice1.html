@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <link rel="stylesheet" href="practice1.css">
+   <title>BAG</title>
+   
+</head>
+<body>
+   <button class="bag-button" onclick="bagQuantity +=1;
+   document.querySelector('#bag').innerText=`Your bag has ${bagQuantity} items`;
+   ">Add to bag</button>
+   <button class="wish-button" onclick="bagQuantity --;
+   document.querySelector('#bag').innerText=`Your bag has ${bagQuantity} items`;">Add to Wishlist</button>
+   <h1 id="bag"></h1>
+   <script>
+      let bagQuantity = 0;
+      document.querySelector('#bag').innerText=`Your bag has ${bagQuantity} items`;
+   </script>
+</body>
+</html>
